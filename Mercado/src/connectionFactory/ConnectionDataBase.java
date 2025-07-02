@@ -42,7 +42,7 @@ public class ConnectionDataBase {
 		
 	}
 	
-	public void closeConnection(Connection con, PreparedStatement stmt) {
+	public static void closeConnection(Connection con, PreparedStatement stmt) {
 		closeConnection(con);
 		try {
 			if(stmt != null) {
