@@ -54,7 +54,7 @@ public class ConnectionDataBase {
 		}
 		
 	}
-	public void  closeConnection(Connection con, PreparedStatement stmt, ResultSet rs) {
+	public static void  closeConnection(Connection con, PreparedStatement stmt, ResultSet rs) {
 		closeConnection(con, stmt);
 		
 		try {
